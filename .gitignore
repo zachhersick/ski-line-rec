@@ -1,4 +1,6 @@
+# ---------------------------
 # Python
+# ---------------------------
 __pycache__/
 *.py[cod]
 *.pyo
@@ -9,33 +11,65 @@ __pycache__/
 *.manifest
 *.spec
 
-# Virtual environment
+# ---------------------------
+# Virtual environments
+# ---------------------------
 .venv/
 env/
 venv/
 
+# ---------------------------
 # Django
+# ---------------------------
 db.sqlite3
 *.log
 media/
 staticfiles/
 
+# ---------------------------
+# Data artifacts
+# ---------------------------
+data/processed/
+*.parquet
+*.csv
+
+# ---------------------------
+# Environment files
+# ---------------------------
+.env
+*.env
+
+# ---------------------------
 # Jupyter / experiments
+# ---------------------------
 .ipynb_checkpoints
 *.ipynb
 
-# VS Code
-.vscode/
-.history/
-*.code-workspace
+# ---------------------------
+# VS Code (share only useful configs)
+# ---------------------------
+.vscode/*
+!.vscode/settings.json
+!.vscode/launch.json
 
+# ---------------------------
 # OS cruft
+# ---------------------------
 .DS_Store
 Thumbs.db
 
+# ---------------------------
 # TensorFlow / ML
+# ---------------------------
 models/
 checkpoints/
 *.h5
 *.pb
 *.ckpt*
+
+# ---------------------------
+# Testing / Coverage
+# ---------------------------
+.pytest_cache/
+.coverage
+htmlcov/
