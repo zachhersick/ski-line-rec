@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+*.manifest
+*.spec
+
+# Virtual environment
+.venv/
+env/
+venv/
+
+# Django
+db.sqlite3
+*.log
+media/
+staticfiles/
+
+# Jupyter / experiments
+.ipynb_checkpoints
+*.ipynb
+
+# VS Code
+.vscode/
+.history/
+*.code-workspace
+
+# OS cruft
+.DS_Store
+Thumbs.db
+
+# TensorFlow / ML
+models/
+checkpoints/
+*.h5
+*.pb
+*.ckpt*
